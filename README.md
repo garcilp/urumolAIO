@@ -33,4 +33,4 @@ Enter a Moxfield deck URL or deck ID in either deck field. Generated deck files 
 - `assets/` — fonts and image assets used by the interface and renderers
 - `stream/` — live output location
 
-The files in `assets/fonts/` should only be redistributed with permission under their respective font licenses. Check those licenses before publishing this repository publicly.
+The files in `assets/fonts/` should only be redistributed with permission under their respective font licenses.
