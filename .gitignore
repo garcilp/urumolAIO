@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Runtime and generated data
+/config/players.py
+/cache/player
+/stream/output/*
+!/stream/output/.gitkeep
+
+# Local settings and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

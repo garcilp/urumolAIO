@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Urumol Stream Manager</string>
+  </property>
+
+  <widget class="QWidget" name="centralwidget">
+
+   <layout class="QVBoxLayout" name="verticalLayout">
+
+```
+<!-- PLAYER 1 -->
+
+<item>
+ <widget class="QGroupBox" name="player1Group">
+  <property name="title">
+   <string>PLAYER 1</string>
+  </property>
+
+  <layout class="QVBoxLayout" name="player1Layout">
+
+   <item>
+    <layout class="QHBoxLayout" name="player1TopRow">
+
+     <item>
+      <widget class="QLabel" name="labelDeck1">
+       <property name="text">
+        <string>Deck</string>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QLineEdit" name="deckId1">
+       <property name="maximumWidth">
+        <number>220</number>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QToolButton" name="manaW1">
+       <property name="text">
+        <string>W</string>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QToolButton" name="manaU1">
+       <property name="text">
+        <string>U</string>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QToolButton" name="manaB1">
+       <property name="text">
+        <string>B</string>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QToolButton" name="manaR1">
+       <property name="text">
+        <string>R</string>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QToolButton" name="manaG1">
+       <property name="text">
+        <string>G</string>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QToolButton" name="manaC1">
+       <property name="text">
+        <string>C</string>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <spacer name="player1Spacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </spacer>
+     </item>
+
+     <item>
+      <widget class="QLabel" name="scoreLabel1">
+       <property name="text">
+        <string>Score</string>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QSpinBox" name="score1"/>
+     </item>
+
+    </layout>
+   </item>
+
+   <item>
+    <layout class="QFormLayout" name="player1Form">
+
+     <item row="0" column="0">
+      <widget class="QLabel" name="labelPlayer1">
+       <property name="text">
+        <string>Player</string>
+       </property>
+      </widget>
+     </item>
+
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="playerName1"/>
+     </item>
+
+     <item row="1" column="0">
+      <widget class="QLabel" name="labelDeckName1">
+       <property name="text">
+        <string>Deck</string>
+       </property>
+      </widget>
+     </item>
+
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="deckName1"/>
+     </item>
+
+    </layout>
+   </item>
+
+  </layout>
+ </widget>
+</item>
+
+<!-- SWAP ROW -->
+
+<item>
+ <layout class="QHBoxLayout" name="swapLayout">
+
+  <item>
+   <widget class="QFrame" name="lineLeft">
+    <property name="frameShape">
+     <enum>QFrame::HLine</enum>
+    </property>
+   </widget>
+  </item>
+
+  <item>
+   <widget class="QToolButton" name="swapButton">
+    <property name="text">
+     <string>⇅</string>
+    </property>
+   </widget>
+  </item>
+
+  <item>
+   <widget class="QFrame" name="lineRight">
+    <property name="frameShape">
+     <enum>QFrame::HLine</enum>
+    </property>
+   </widget>
+  </item>
+
+ </layout>
+</item>
+
+<!-- PLAYER 2 -->
+
+<item>
+ <widget class="QGroupBox" name="player2Group">
+  <property name="title">
+   <string>PLAYER 2</string>
+  </property>
+
+  <layout class="QVBoxLayout" name="player2Layout">
+
+   <item>
+    <layout class="QHBoxLayout" name="player2TopRow">
+
+     <item>
+      <widget class="QLabel" name="labelDeck2">
+       <property name="text">
+        <string>Deck</string>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QLineEdit" name="deckId2">
+       <property name="maximumWidth">
+        <number>220</number>
+       </property>
+      </widget>
+     </item>
+
+     <item><widget class="QToolButton" name="manaW2"><property name="text"><string>W</string></property></widget></item>
+     <item><widget class="QToolButton" name="manaU2"><property name="text"><string>U</string></property></widget></item>
+     <item><widget class="QToolButton" name="manaB2"><property name="text"><string>B</string></property></widget></item>
+     <item><widget class="QToolButton" name="manaR2"><property name="text"><string>R</string></property></widget></item>
+     <item><widget class="QToolButton" name="manaG2"><property name="text"><string>G</string></property></widget></item>
+     <item><widget class="QToolButton" name="manaC2"><property name="text"><string>C</string></property></widget></item>
+
+     <item>
+      <spacer name="player2Spacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </spacer>
+     </item>
+
+     <item>
+      <widget class="QLabel" name="scoreLabel2">
+       <property name="text">
+        <string>Score</string>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QSpinBox" name="score2"/>
+     </item>
+
+    </layout>
+   </item>
+
+   <item>
+    <layout class="QFormLayout" name="player2Form">
+
+     <item row="0" column="0">
+      <widget class="QLabel" name="labelPlayer2">
+       <property name="text">
+        <string>Player</string>
+       </property>
+      </widget>
+     </item>
+
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="playerName2"/>
+     </item>
+
+     <item row="1" column="0">
+      <widget class="QLabel" name="labelDeckName2">
+       <property name="text">
+        <string>Deck</string>
+       </property>
+      </widget>
+     </item>
+
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="deckName2"/>
+     </item>
+
+    </layout>
+   </item>
+
+  </layout>
+ </widget>
+</item>
+```
+
+   </layout>
+
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Urumol Stream Manager</string>
+  </property>
+
+  <widget class="QWidget" name="centralwidget">
+
+   <layout class="QVBoxLayout" name="verticalLayout">
+
+```
+<!-- PLAYER 1 -->
+
+<item>
+ <widget class="QGroupBox" name="player1Group">
+  <property name="title">
+   <string>PLAYER 1</string>
+  </property>
+
+  <layout class="QVBoxLayout" name="player1Layout">
+
+   <item>
+    <layout class="QHBoxLayout" name="player1TopRow">
+
+     <item>
+      <widget class="QLabel" name="labelDeck1">
+       <property name="text">
+        <string>Deck</string>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QLineEdit" name="deckId1">
+       <property name="maximumWidth">
+        <number>220</number>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QToolButton" name="manaW1">
+       <property name="text">
+        <string>W</string>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QToolButton" name="manaU1">
+       <property name="text">
+        <string>U</string>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QToolButton" name="manaB1">
+       <property name="text">
+        <string>B</string>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QToolButton" name="manaR1">
+       <property name="text">
+        <string>R</string>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QToolButton" name="manaG1">
+       <property name="text">
+        <string>G</string>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QToolButton" name="manaC1">
+       <property name="text">
+        <string>C</string>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <spacer name="player1Spacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </spacer>
+     </item>
+
+     <item>
+      <widget class="QLabel" name="scoreLabel1">
+       <property name="text">
+        <string>Score</string>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QSpinBox" name="score1"/>
+     </item>
+
+    </layout>
+   </item>
+
+   <item>
+    <layout class="QFormLayout" name="player1Form">
+
+     <item row="0" column="0">
+      <widget class="QLabel" name="labelPlayer1">
+       <property name="text">
+        <string>Player</string>
+       </property>
+      </widget>
+     </item>
+
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="playerName1"/>
+     </item>
+
+     <item row="1" column="0">
+      <widget class="QLabel" name="labelDeckName1">
+       <property name="text">
+        <string>Deck</string>
+       </property>
+      </widget>
+     </item>
+
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="deckName1"/>
+     </item>
+
+    </layout>
+   </item>
+
+  </layout>
+ </widget>
+</item>
+
+<!-- SWAP ROW -->
+
+<item>
+ <layout class="QHBoxLayout" name="swapLayout">
+
+  <item>
+   <widget class="QFrame" name="lineLeft">
+    <property name="frameShape">
+     <enum>QFrame::HLine</enum>
+    </property>
+   </widget>
+  </item>
+
+  <item>
+   <widget class="QToolButton" name="swapButton">
+    <property name="text">
+     <string>⇅</string>
+    </property>
+   </widget>
+  </item>
+
+  <item>
+   <widget class="QFrame" name="lineRight">
+    <property name="frameShape">
+     <enum>QFrame::HLine</enum>
+    </property>
+   </widget>
+  </item>
+
+ </layout>
+</item>
+
+<!-- PLAYER 2 -->
+
+<item>
+ <widget class="QGroupBox" name="player2Group">
+  <property name="title">
+   <string>PLAYER 2</string>
+  </property>
+
+  <layout class="QVBoxLayout" name="player2Layout">
+
+   <item>
+    <layout class="QHBoxLayout" name="player2TopRow">
+
+     <item>
+      <widget class="QLabel" name="labelDeck2">
+       <property name="text">
+        <string>Deck</string>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QLineEdit" name="deckId2">
+       <property name="maximumWidth">
+        <number>220</number>
+       </property>
+      </widget>
+     </item>
+
+     <item><widget class="QToolButton" name="manaW2"><property name="text"><string>W</string></property></widget></item>
+     <item><widget class="QToolButton" name="manaU2"><property name="text"><string>U</string></property></widget></item>
+     <item><widget class="QToolButton" name="manaB2"><property name="text"><string>B</string></property></widget></item>
+     <item><widget class="QToolButton" name="manaR2"><property name="text"><string>R</string></property></widget></item>
+     <item><widget class="QToolButton" name="manaG2"><property name="text"><string>G</string></property></widget></item>
+     <item><widget class="QToolButton" name="manaC2"><property name="text"><string>C</string></property></widget></item>
+
+     <item>
+      <spacer name="player2Spacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </spacer>
+     </item>
+
+     <item>
+      <widget class="QLabel" name="scoreLabel2">
+       <property name="text">
+        <string>Score</string>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QSpinBox" name="score2"/>
+     </item>
+
+    </layout>
+   </item>
+
+   <item>
+    <layout class="QFormLayout" name="player2Form">
+
+     <item row="0" column="0">
+      <widget class="QLabel" name="labelPlayer2">
+       <property name="text">
+        <string>Player</string>
+       </property>
+      </widget>
+     </item>
+
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="playerName2"/>
+     </item>
+
+     <item row="1" column="0">
+      <widget class="QLabel" name="labelDeckName2">
+       <property name="text">
+        <string>Deck</string>
+       </property>
+      </widget>
+     </item>
+
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="deckName2"/>
+     </item>
+
+    </layout>
+   </item>
+
+  </layout>
+ </widget>
+</item>
+```
+
+   </layout>
+
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
